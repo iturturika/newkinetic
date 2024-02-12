@@ -1,0 +1,36 @@
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 250px;
+    cursor: pointer;
+}
+.item-label{
+    margin-top: 10px;
+    opacity: 0;
+}
+
+.item-price{
+    opacity: 0;
+
+}
+
+.item-img{
+    margin: 0 auto;
+
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 0.5s ease-in forwards;
+  }
+  
+@keyframes fadeInAnimation {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}
