@@ -4,6 +4,7 @@ import "./page.scss";
 
 import Header from "@/components/Header/Header";
 import Item from "@/components/Item/Item";
+import Cart from "@/components/Cart/Cart";
 
 export default function Home() {
   const [isOpenCart, setIsOpenCart] = React.useState<any>(false);
@@ -12,10 +13,19 @@ export default function Home() {
       <Header setIsOpenCart={setIsOpenCart}/>
       <div className="items-section">
         <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
+        <Item />
       </div>
-      <div className={'cart-section'} style={isOpenCart ? {right: 0} : {}} >
-        <p onClick={() => {setIsOpenCart(false)}}>x</p>
-      </div>
+      <Cart isOpenCart={isOpenCart} setIsOpenCart={setIsOpenCart}/>
     </main>
   );
 }

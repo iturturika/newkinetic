@@ -10,6 +10,29 @@
   font-weight: 400;
   font-size: 16px;
   color: #625C58;
+  letter-spacing: .1rem;
+}
+
+*::selection {
+  background-color: #ebebeb; /* Желтый цвет выделения */
+  color: black; /* Цвет текста в выделенном участке */
+}
+
+::-webkit-scrollbar {
+  width: 3px; /* Ширина скроллбара */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Цвет фона скроллбара */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #afafaf; /* Цвет ползунка скроллбара */
+  border-radius: 5px; /* Скругление углов ползунка */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #6b6b6b; /* Цвет ползунка при наведении */
 }
 
 /* Убираем внутренние отступы */

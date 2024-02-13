@@ -7,16 +7,31 @@
 
 
 .items-section{
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.cart-section{
-    position: fixed;
-    top: 0;
-    right: -300px; /* Скрытый начальный правый отступ */
-    width: 300px;
-    height: 100vh;
-    background-color: #fff;
-    border: 1px solid #000;
-    transition: right 0.3s ease;
+@media screen and (max-width: 1450px) {
+    .main-page{
+        width: 1100px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .main-page{
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .main-page{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .main-page{
+        width: 320px;
+    }
 }
