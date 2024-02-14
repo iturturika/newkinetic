@@ -1,0 +1,30 @@
+.product-page{
+    display: flex;
+    margin: 0 auto;
+    width: 1450px;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1450px) {
+    .product-page{
+        width: 1100px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .product-page{
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .product-page{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .product-page{
+        width: 320px;
+    }
+}
