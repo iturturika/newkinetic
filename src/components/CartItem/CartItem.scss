@@ -27,6 +27,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    p:active{
+        opacity: 0.6;
+    }
 }
 
 .cart-item-iterator{
@@ -41,10 +44,14 @@
     P{
         font-size: 12px;
     }
+    svg:active{
+        opacity: 0.6;
+    }
 }
 
 .cart-item-information{
     display: flex;
     flex-direction: column;
     row-gap: 5px;
+    margin-right: 5px;
 }

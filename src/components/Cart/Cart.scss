@@ -4,7 +4,7 @@
     top: 0;
     right: -350px;
     width: 350px;
-    height: 100vh;
+    height: 100%;
     background-color: #fff;
     border-left: 1px solid #000;
     transition: right 0.5s ease-in-out;
@@ -46,7 +46,7 @@
     font-weight: 500;
     transition: all .3s ease;
     font-size: 12px;
-    min-height: 33px!important;
+    height: 40px;
     border: 0;
     cursor: pointer;
 }
@@ -54,6 +54,10 @@
 
 
 .cart-section-checkout-button:hover{
+    opacity: 0.6;
+}
+
+.cart-section-checkout-button:active{
     opacity: 0.6;
 }
 

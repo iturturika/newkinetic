@@ -24,7 +24,6 @@ const Cart = ({setIsOpenCart, isOpenCart} : {setIsOpenCart: any, isOpenCart: any
             <CartItem />
             <CartItem />
             <CartItem />
-            <CartItem />
         </div>
         <div className='cart-section-total'>
             <p>SUBTOTAL</p>
