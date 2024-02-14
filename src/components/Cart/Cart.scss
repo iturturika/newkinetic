@@ -65,3 +65,11 @@
     row-gap: 15px;
     overflow-y: scroll;
 }
+
+
+@media screen and (max-width: 450px) {
+    .cart-section{
+        right: -320px;
+        width: 320px;
+    }
+}

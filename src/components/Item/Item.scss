@@ -10,11 +10,16 @@
 .item-label{
     margin-top: 10px;
     opacity: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;    
 }
 
 .item-price{
     opacity: 0;
-
+    display: flex;
+    justify-content: center;
+    width: 100%;        
 }
 
 .item-img{
@@ -34,4 +39,35 @@ from {
 to {
     opacity: 1;
 }
+}
+
+@media screen and (max-width: 1450px) {
+    .item{
+        flex-basis: 25%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .item{
+        flex-basis: 25%;
+    }
+    .item-label{
+        opacity: 1 !important;
+    }
+    
+    .item-price{
+        opacity: 1 !important; 
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .item{
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .item{
+        flex-basis: 100%;
+    }
 }
