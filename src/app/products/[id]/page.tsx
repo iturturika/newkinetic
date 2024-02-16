@@ -12,13 +12,52 @@ const page = () => {
     <div className='product-page'>
       <Header setIsOpenCart={setIsOpenCart}/>
       <Cart isOpenCart={isOpenCart} setIsOpenCart={setIsOpenCart}/>
-      <Image    
+      <div className='product-page-item'>
+        <div className='product-page__img-collection'>
+          <Image    
             src={item}
             alt="item"
             className='product-item-img'
             priority
             style={{objectFit: 'contain'}}
-        />
+          />
+          <Image    
+            src={item}
+            alt="item"
+            className='product-item-img_selected'
+            priority
+            style={{objectFit: 'contain'}}
+          />
+        </div>
+
+        <div className='product-page__main-img'>
+          <Image    
+            src={item}
+            alt="item"
+            priority
+            style={{objectFit: 'contain', width: '40%', height: 'auto'}}
+          />
+        </div>
+
+        <div className='product-page__info'>
+          <div className='product-page__info-label-and-price'>
+            <p>BASIC T-SHIRT BLACK</p>
+            <p>360mdl</p>
+          </div>
+          <select className='product-page-select'>
+            <option>SIZE</option>
+          </select>
+          <button className='product-page-add-to-cart-button'>ADD TO CART</button>
+          <div className='product-page__info-size'>
+            <p>SIZE GUIDE</p>
+            <p>
+              SIZE  1 2 3<br/>
+              US  6-8.5 9-10.5 11-13<br/>
+              BROTHER IS SIZE US 11 HE IS WEARING A SIZE 3<br/>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
