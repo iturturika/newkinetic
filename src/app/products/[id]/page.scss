@@ -100,7 +100,28 @@
     height: 40px;
     border: 0;
     cursor: pointer;
+    outline: none;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
+
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 0.5s ease-in forwards;
+  }
+  
+@keyframes fadeInAnimation {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}
+
 
 @media screen and (max-width: 1450px) {
     .product-page{

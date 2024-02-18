@@ -8,11 +8,12 @@ import Image from 'next/image'
 
 const page = () => {
   const [isOpenCart, setIsOpenCart] = React.useState<any>(false);
+  const [isOpenSizeGuide, setIsOpenSizeGuide] = React.useState<any>(false);
   return (
     <div className='product-page'>
       <Header setIsOpenCart={setIsOpenCart}/>
       <Cart isOpenCart={isOpenCart} setIsOpenCart={setIsOpenCart}/>
-      <div className='product-page-item'>
+      <div className='product-page-item fade-in'>
         <div className='product-page__img-collection'>
           <Image    
             src={item}
@@ -49,12 +50,16 @@ const page = () => {
           </select>
           <button className='product-page-add-to-cart-button'>ADD TO CART</button>
           <div className='product-page__info-size'>
-            <p>SIZE GUIDE</p>
-            <p>
-              SIZE  1 2 3<br/>
-              US  6-8.5 9-10.5 11-13<br/>
-              BROTHER IS SIZE US 11 HE IS WEARING A SIZE 3<br/>
-            </p>
+            <p onClick={() => {setIsOpenSizeGuide(!isOpenSizeGuide)}} style={{marginBottom: '20px'}}>SIZE GUIDE</p>
+            {
+              isOpenSizeGuide ?
+              <p style={{marginBottom: '20px'}} className='fade-in'>
+                SIZE  1 2 3<br/>
+                US  6-8.5 9-10.5 11-13<br/>
+                BROTHER IS SIZE US 11 HE IS WEARING A SIZE 3<br/>
+              </p>
+              : null
+            }
           </div>
         </div>
       </div>
