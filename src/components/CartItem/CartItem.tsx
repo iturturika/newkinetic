@@ -3,7 +3,13 @@ import './CartItem.scss'
 import item from '../../img/img.png'
 import Image from 'next/image'
 
-const CartItem = () => {
+interface ItemProp {
+    id: Number,
+    label: String,
+    price: Number
+}
+
+const CartItem = (prop: ItemProp) => {
   return (
     <div className='cart-item'>
         <Image    
@@ -15,8 +21,8 @@ const CartItem = () => {
         />
         <div className='cart-item-information'>
             <div className='cart-item-label'>
-                <p>KINETIC T-SHIRT BLACK</p>
-                <p>360</p>
+                <p>{prop.label}</p>
+                <p>{prop.price}</p>
             </div>
             <div className='cart-item-size'>
                 <p>SIZE: 1</p>
